@@ -1,0 +1,24 @@
+{
+  "name": "asiap",
+  "version": "1.0.0",
+  "description": "alaikal",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start-dev": "webpack-dev-server"
+  },
+  "keywords": [
+    "wow"
+  ],
+  "author": "muhammad alaikal fatoni",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
