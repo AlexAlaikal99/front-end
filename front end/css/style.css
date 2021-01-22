@@ -1,0 +1,229 @@
+ body{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        html, body {
+               
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+        }
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+        }
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #fcfcfc;
+  outline: 1px solid white;
+}
+        nav{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            left: 0px;
+            top: 0px;
+            background-color: #e6e6e6;
+        }
+        nav ul {
+		    background: #fcfcfc;
+		    padding: 0 20px;
+		    list-style: none;
+		    position: relative;
+		    display: inline-table;
+		    width: 100%;
+            height: 100px;
+            color: black;
+            padding-top:3%;
+            padding-right: 11%;
+	    }
+
+	    nav ul li{
+		    float: right;
+            color: #000000;
+            margin-right: 2%; 
+            left: 1219px;
+	    }
+	    nav ul li:hover{
+	    }
+
+	    nav ul li:hover a{
+            color:#000;
+            font-weight: bold;
+            border-bottom: 3px solid #462B45;
+	    }
+	    nav ul li a{
+	 	    display: block;
+            margin-left: 10px;   
+	 	    padding: 5px;
+	 	    color: #757575;
+	 	    text-decoration: none;
+            font-family: Hind;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+	    }
+        input[type=submit]{
+            position: absolute;
+            width: 94px;
+            height: 37px;
+            left: 1219px;
+            top: 39px;
+            border-radius: 3px;
+            border: 0px;
+            color: white;
+            background-color: #462B45;
+            font-weight: bold;
+        }
+        .pertama{
+            position: absolute;
+            width: 550px;
+            height: 156px;
+            left: 55px;
+            top: 250px;
+            font-family: Hind;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 78%;
+            
+        }
+        .kiri{
+            width: 50%;
+            height: 70%;
+            float:left;
+            background-color: #ffffff;
+    
+        }
+        .kanan{
+            width: 50%;
+            height: 70%;
+             background-color: #ffffff;
+            float:right;
+        }
+        .bawah{
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            background: #F5EAEF;
+            top: 850px;
+        }
+        
+        .paragraf{
+            position: absolute;
+width: 450px;
+height: 135px;
+left: 55px;
+            right: 25px;
+top: 280px;
+            margin-right: 3%;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 40px;
+            text-align: justify-all;
+
+
+color: #111111;
+        }
+        .kedua{
+            position: absolute;
+width: 550px;
+height: 156px;
+left: 780px;
+top: 600px;
+
+font-family: Hind;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 70%;
+        }
+        .paragraf2{
+            position: absolute;
+width: 550px;
+height: 156px;
+left: 650px;
+top: 620px;
+
+font-family: Hind;
+font-style: normal;
+font-size: 18px;
+line-height: 83px;
+text-align: center;
+        }
+        .bawahh{
+            position: absolute;
+width: 100%;
+height: 100px;
+top: 50px;
+
+font-family: Hind;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 130%;
+/* or 83px */
+
+text-align: center;
+
+color: #111111;
+
+            
+        }
+        .bawahan{
+            position: absolute;
+width: 100%;
+height: 45px;
+top: 90px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 45px */
+text-align:center;
+
+color: #111111;
+        }
+        .daftar{
+             position: absolute;
+            width: 180px;
+            height: 45px;
+            left: 600px;
+            top: 160px;
+            border-radius: 5px;
+            padding-top:1%;
+            text-align: center;
+            border: 0px;
+            color: white;
+            background-color: #462B45;
+            font-weight: bold;
+            text-decoration: none;
+        }
+.gambarkanan{
+    position: absolute;
+width: 400px;
+height: 300px;
+left: 770px;
+top: 150px;
+    
+}
+.gambarkiri{
+    position: absolute;
+width: 400px;
+height: 300px;
+left: 100px;
+top: 500px;
+}

@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Mysite SignUp</title>
+   <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <div class="left"><h1 class="sps">Student Psychology Service </h1>
+        <h1 class="sps2">(SPS)</h1>
+        <p class="satu">Silahkan daftar terlebih dahulu</p>
+        <form action="signin.html" method="post">
+            <label class="nama">Nama Lengkap</label><br>
+            <input class="john" type="text" name="nama" id="nama" placeholder="John Doe" required><br>
+             <label class="email">E-mail</label><br>
+            <input class="johnmail" type="text" name="email" id="email" placeholder="Johndoe@email.com" required><br>
+            <label class="password">Sandi</label><br>
+            <input class="pass"type="password" name="password" id="password" placeholder="Password..." required><br>
+        </form>
+            <button id="myBtn">Daftar</button>
+        
+        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+        <img class="selamat" src="css/gambar/selamat.png"  align="center">
+        <p class="ketiga">Kamu sudah terdaftar di platform ini. Silahkan login untuk memulai konsultasi</p>
+     
+    </div>
+    <div class="modal-footer">
+        
+            <a href="signin.html" class="login">Login</a>
+        
+    </div>
+  </div>
+
+</div>
+     
+        <p class="kedua">Sudah punya akun? <a href="signin.html">Login Sekarang</a></p>
+    </div>
+    <div class="right"></div>
+    
+    <script>
+       
+                     var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                          modal.style.display = "none";
+                      }
+                    }
+
+</script>
+</body>
+</html>

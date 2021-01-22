@@ -1,0 +1,286 @@
+ body{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        html, body {
+               
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+        }
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+        }
+        .left{
+            width: 50%;
+            height:100%;
+            float: left;
+            background-color: #f8f8f8;
+            position: absolute;
+            padding-left: 6%;
+            padding-top: 3%;
+        }
+        .right{
+            width: 50%;
+            height:100%;
+            background: url(gambar/psikolog2.jpg);
+            float: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sps{
+            position: absolute;
+            width: 500px;
+            height: 166px;
+            left: 80px;
+            top: 20px;
+            font-family: Hind;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 50px;
+            color: #111111;
+        }
+        .sps2{
+            text-align: center;
+             position: absolute;
+            width: 500px;
+            height: 166px;
+            left: 70px;
+            top: 70px;
+            font-family: Hind;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 50px;
+            color: #111111;
+        }
+        .satu{
+            position: absolute;
+            width: 425px;
+            height: 39px;
+            left: 80px;
+            top: 130px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 130%;
+        }
+        .nama{
+            position: absolute;
+            width: 168px;
+            height: 31px;
+            left: 80px;
+            top: 165px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 31px;
+            color: #2C2C2C;
+        }
+        .email{
+            position: absolute;
+            width: 168px;
+            height: 31px;
+            left: 80px;
+            top: 250px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 31px;
+            color: #2C2C2C;
+        }
+        .password{
+            position: absolute;
+            width: 168px;
+            height: 31px;
+            left: 80px;
+            top: 340px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 31px;
+            color: #2C2C2C;
+        }
+        .john{
+             padding-left: 2%;
+            position: absolute;
+width: 500px;
+height: 40px;
+left: 80px;
+top: 200px;
+
+background: #FFFFFF;
+border: 1px solid #828282;
+box-sizing: border-box;
+border-radius: 4px;
+        }
+        .johnmail{
+            position: absolute;
+width: 500px;
+height: 40px;
+             padding-left: 2%;
+left: 80px;
+top: 285px;
+
+background: #FFFFFF;
+border: 1px solid #828282;
+box-sizing: border-box;
+border-radius: 4px;
+        }
+        .pass{
+            position: absolute;
+             padding-left: 2%;
+width: 500px;
+height: 40px;
+left: 80px;
+top: 375px;
+
+background: #FFFFFF;
+border: 1px solid #828282;
+box-sizing: border-box;
+border-radius: 4px;
+        }
+        button{
+            position: absolute;
+width: 400px;
+height: 40px;
+left: 125px;
+top: 450px;
+color: white;
+background: #462B45;
+border-radius: 5px;
+font-weight: bold;
+border: 0px solid;
+        }
+        .kedua{
+            position: absolute;
+width: 334px;
+height: 36px;
+left: 200px;
+top: 540px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 50%;
+/* or 36px */
+
+
+color: #333333;
+        }
+        a{
+            text-decoration: none;
+            color: #462B45;
+            font-weight: bold;
+        }
+        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: absolute;
+  background-color: #fefefe;
+  margin: auto;
+    margin-left: 20%;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+    height:70%;
+    border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: purple;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.close:hover,
+.close:focus {
+  color: mediumpurple;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 5px 16px;
+  background-color: #f8f8f8;
+  color: white;
+}
+        .selamat{
+       position: absolute;
+width: 200px;
+height: 150px;
+left: 300px;
+top: 50px;
+        }
+        .login{
+              position: absolute;
+width: 300px;
+height: 40px;
+left: 260px;
+top: 350px;
+color: white;
+background: #462B45;
+border-radius: 5px;
+font-weight: bold;
+border: 0px solid;
+            text-align: center;
+            padding-top: 1%;
+        }
+        .ketiga{
+              position: absolute;
+width: 400px;
+height: 36px;
+left: 210px;
+top: 240px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 150%;
+            text-align: center;
+            font-weight: bold;
+        }

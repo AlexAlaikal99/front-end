@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style5.css">
+    
+    <title>Document</title>
+</head>
+<body>
+<nav>
+        <ul>
+            <li><a href="#"><img src="css/gambar/akun.jpg" style="width: 30px;height: 30px;"></a><p class="akun">Account</p></li>
+            <li><a href="#"><img src="css/gambar/chat.jpg" style="width: 30px;height: 30px;"></a></li>
+            <li><a href="#"><img src="css/gambar/lonceng.jpg" style="width: 25px;height: 30px;"></a></li>
+            <li><a href="#">Peer Support</a></li>
+	 	<li><a href="#">Psikolog</a></li>
+	 	<li><a href="#">Beranda</a></li>
+        </ul>
+    </nav>
+     <div class="full">
+         <p class="notifikasi"> Riwayat Notifikasi</p>
+         <button class="baca" onclick="notifikasi()">baca sekarang</button>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div>
+    <script>
+            $(document).ready(function() {
+                  if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+            });
+             
+            function notifikasi() {
+                if (!Notification) {
+                    alert('Browsermu tidak mendukung Web Notification.'); 
+                    return;
+                }
+                if (Notification.permission !== "granted")
+                    Notification.requestPermission();
+                else {
+                    var notifikasi = new Notification('Judul Notifikasi', {
+                        icon: 'http://jagocoding.com/theme/New/img/logo.png',
+                        body: "Belajar di Jago Coding, Sangat Menyenangkan !",
+                    });
+                    notifikasi.onclick = function () {
+                        window.open("http://goo.gl/dIf4s1");      
+                    };
+                    setTimeout(function(){
+                        notifikasi.close();
+                    }, 5000);
+                }
+            };
+        </script>
+</body>
+</html>
