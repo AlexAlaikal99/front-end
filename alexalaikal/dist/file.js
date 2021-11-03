@@ -1,0 +1,1 @@
+import img from 'images/heros/hero-image_3.jpg';

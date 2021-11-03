@@ -1,0 +1,30 @@
+[
+  {
+    "userId": 1,
+    "id": 1,
+    "foto": "https://github.com/AlexAlaikal99/Data/blob/main/capucino.jpg?raw=true",
+    "title": "Capucino",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "foto": "https://github.com/AlexAlaikal99/Data/blob/main/es%20kopi.jpg?raw=true",
+    "title": "Es Kopi",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "userId": 10,
+    "id": 99,
+    "foto": "https://github.com/AlexAlaikal99/Data/blob/main/kopi%20hijau.jpg?raw=true",
+    "title": "Kopi Hijau", 
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "userId": 10,
+    "id": 100,
+    "foto": "https://github.com/AlexAlaikal99/Data/blob/main/kopi%20hitam.jpg?raw=true",
+    "title": "Kopi Hitam",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  }
+]

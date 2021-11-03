@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurant Apps Starter Project</title>
+        <link rel="stylesheet" href="../src/styles/main.css">
+    </head>
+    <body>
+         <div class="hero"><div class="transbox">
+            <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img class="logo" src="../public/images/heros/untitled__6_-removebg-preview.png" alt="logo cafe"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ORDER ONLINE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FAVORITE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/alex-alaikal/" class="nav-link">ABOUT US</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+            
+            <div class="hero2">
+                <H2>TRETES COFFEE E-CAFE</H2>
+                <aa>SITUS PEMESANAN KOPI ONLINE COD, BOOKING DAN DRIVE-THRU. SILAHKAN ANDA MEMESAN DISINI....</aa>
+            </div>
+                    
+           <div class="wrapper">
+                <div class="box1">
+                    <table border="0" class="carisaja" cellspacing="3">
+                       <tr>
+                           <td> <img src="../src/public/images/heros/kalender.png" class="keranjang" alt="icon"></td>
+                           <td> &nbsp;<span class="date"></span>&nbsp;&nbsp;&nbsp;&nbsp;    <span class="time"></span></td>
+                       </tr>
+                   </table></div>
+               <div class="box2">
+                   <table border="0" class="carisaja" cellspacing="3">
+                       <tr>
+                           <td> <img src="../src/public/images/heros/user.png" class="keranjang" alt="icon"></td>
+                           <td> <alexalaikal>SELAMAT DATANG CUSTOMER</alexalaikal></td>
+                       </tr>
+                   </table>
+                   </div>
+            </div>
+                    </div>
+                     
+            </div>
+
+<!--Search CODE -->
+      <div class="daftarmenu">
+          <div class="wayae"> DAFTAR MENU KOPI</div>
+          <div class="wayae2"><span class="bmd-form-group">
+   <div class="input-group">
+       <button id="btn-load" tabindex="-1" onclick="loadContent()">Lihat Menu</button>
+     
+   </div>
+  </span> </div>
+         </div>
+    <div id="hasil"></div>
+    <script>
+         function loadContent(){
+             fetch("../src/scripts/DATA.json")
+            .then(response => response.json())
+            .then(function(data){
+                    var template = data.map(post => {
+                        return ` 
+ <div class="card">
+   <div class="card-body">
+<div id="Bank">
+     <img src="${post.foto}" class="foto" alt="menu item">
+    </div>
+                    <div id="Name" class="nama"><h3>${post.title}</h3></div>
+                    <div class="harga"><p>${post.body}</p></div>
+                    <div class="rating">
+                        <details>
+                        <summary>Lihat Rating</summary>
+                        <fieldset class="bintang"><span class="starImg star-50"></span></fieldset>
+                        </details>
+                    </div>
+                    <a href="#"><div class="tanda">Lihat Detail</div></a>
+   </div>
+  </div>
+                        `;
+                    });
+
+                    document.getElementById("hasil").innerHTML = template.join('<br>');
+                }).catch(function(e){
+                    alert("gagal mengambil data");
+                });
+         }
+        
+    </script>
+    <hr>
+ <div class="footer">
+            <div class="tabel">
+            <table border="0" cellpadding="3" cellspacing="8">
+                <tr>
+                    <th>E-TESCO</th>
+                    <th>METODE PEMBAYARAN</th>
+                </tr>
+                <tr>
+                    <td>Jalan sepi no. 21 Kec. Petengan Tretes Timur</td>
+                    <td>Cost Order Delivery</td>
+                </tr>
+                <tr>
+                    <td>15.00 - 02.00 wib</td>
+                    <td>Booking meja</td>
+                </tr>
+                <tr>
+                    <td>0343-5647-873</td>
+                    <td>Drive THRU</td>
+                </tr>
+            </table>
+            </div>
+            <div class="gambaran">
+            <img src="../src/public/images/heros/9f2861e0319fd14f9e76a82300cdbad5-removebg-preview%20(1).png" class="bawah" alt="icon">
+            </div>
+        </div>
+        <div class="footer2">copyright &copy; 2021 - Tretes E-Cafe</div>
+        <script src="../src/scripts/app.js"></script>
+<script src="../src/scripts/dist/main.js"></script>
+<script src="../src/scripts/main.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,848 @@
+* {
+ box-sizing: border-box;
+}
+     .tanda{
+    background-color: #5cb85c;
+    width: 96%;
+    height: 25px;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+         margin: 2%;
+}
+        .rating{
+            margin: 5%;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .foto{
+    width: 100%;
+    height: 150px;
+    left: 50px;
+    border-radius: 5px 5px 0px 0px;
+}
+        #hasil{
+         
+             margin-left: 5.3%;
+            padding: 2%;
+    margin-right: 5.3%;
+    margin-top: 1%;
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        }
+        .card{
+   width: 170%;
+    margin-left: 10%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px rgba(204, 204, 204, 1);
+}
+        .nama{
+    margin: 5%;
+    color: #555555;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-size: 15px;
+            text-align: justify;
+}
+.harga{
+     margin: 5%;
+    color: #333333;
+    font-size: 12px;
+    text-align: justify;
+}
+      button{
+    background-color: #1890ff;
+    width: 96%;
+     height: 25px;
+    border-radius: 7px;
+    border: 0px solid;
+    color: white;
+    font-weight: bold;
+          margin-left: 1.5%;
+          margin-right: 1.5%;
+    font-size: 12px;
+}
+        button:active {
+  background-color: #00a8cc;
+}
+.navigation-bar {
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    /* if you want it vertically middle of the navbar. */
+}
+.navigation-bar > div > a {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5%;
+    text-align: right;
+    height: 80px;        /* if you want it to take the full height of the bar */
+    line-height: 80px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    /* if you want it vertically middle of the navbar */
+}
+ 
+body {
+ padding: 0;
+ margin: 0;
+ font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+ 
+html, body, main {
+ width: 100%;
+}
+.hero{
+    width: 100%;
+    height: 89%;
+    background-image:url(../public/images/heros/hero-image_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.hero2{
+    width: 100%;
+    height: 63%;
+    text-align: center;
+    color: white;
+    padding: 10%;
+}
+.app-bar{
+    width: 100%;
+    height: 15%;
+    border: 1px solid #5cb85c;
+    
+}
+
+.wrapper {
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.transbox {
+  background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+
+/* styling pendukung */
+.wrapper {
+ padding: 2px;
+ margin-left: 5%;
+ margin-right: 5%;
+    margin-top: 3.3%;
+    margin-bottom: 1%;
+    
+}
+.logo{
+    width: 30%;
+    
+}
+.daftarmenu{
+    padding: 1%;
+    margin-top: 0%;
+     margin-left: 4.2%;
+     margin-right: 4.2%;
+    border-radius: 7px 7px 7px 7px;
+}
+.wayae{
+border-radius: 7px 7px 0px 0px;
+color: white;
+    font-weight: bold;
+font-size:13px;
+    text-align: center;
+background-color: #785E4D;
+width:100%;
+height:7%;
+padding:1%;
+}
+.wayae2{
+border-radius: 0px 0px 7px 7px;
+background-color: #ffffff;
+width:100%;
+height:10%;
+padding-left:2%;
+padding-right:2%;
+padding-top:0.5%;
+padding-bottom:0.5%;
+}
+.box1{
+    background-color: #685454;
+     padding: 8px;
+    border-radius: 7px 0px 0px 7px;
+}
+
+ 
+.kartu{
+    width: 100%;
+    height: 60%;
+    
+    border-bottom: 2px solid #cccccc;
+    
+}
+.box2{
+     padding: 8px;
+    border-radius: 0px 7px 7px 0px;
+    background-color: #ffffff;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0px solid;
+    height: 30%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+table{
+    text-align: left;
+}
+        hr{
+margin-left:5%;
+margin-right:5%;
+margin-top:5%;
+margin-bottom:1%;
+color:#cccccc;
+}
+.bawah{
+    width: 35%;
+    height: 200px;
+    margin-left: 50%;
+
+}
+alexalaikal{
+font-size:18px;
+text-align:center;
+color:#1890ff;
+font-weight:bold;
+}
+.footer2{
+    height: 5%;
+    background-color: #524233;
+    padding: 0.5%;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+.tabel{
+     padding: 5px;
+    border-radius: 7px 0px 0px 7px;
+    height: 30%;
+}
+.gambaran{
+    border-radius: 7px 0px 0px 7px;
+    height: 30%;
+}
+.keranjang{
+    width:39px;
+    height: 50px;
+}
+.carisaja{
+    width: 100%;
+}
+alex{
+    font-weight: bold;
+}
+alaikal{
+    font-weight: bold;
+    color: #ffffff;
+}
+.date{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.time{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+alex{
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+alaikal{
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+        a{
+    text-decoration: none;
+}
+h2{
+    font-size: 20px;
+    margin: 2%;
+}
+aa{
+     font-size: 15px;
+    margin: 2%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+   font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #00ff00;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.nav-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 100;
+}
+        .nav-link:focus{
+             top: 0;
+        }
+
+.nav-link:hover{
+    color: #1890ff;
+}
+        table{
+    text-align: left;
+        font-size: 12px;
+        font-weight: bold;
+        width: 130%;
+}
+
+.nav-logo {
+   
+}@media only screen and (min-width: 200px) and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #555555;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.5s;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 20px;
+    }
+    .nav-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+     button{
+    background-color: #1890ff;
+    width: 96%;
+     height: 20px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: white;
+    font-weight: bold;
+          margin-left: 1.5%;
+          margin-right: 1.5%;
+         padding: 0.5%;
+    font-size: 10px;
+}
+    .wayae{
+border-radius: 7px 7px 0px 0px;
+color: white;
+    font-weight: bold;
+font-size:10px;
+    text-align: center;
+background-color: #785E4D;
+width:100%;
+height:5%;
+padding:2%;
+}
+.wayae2{
+border-radius: 0px 0px 7px 7px;
+background-color: #ffffff;
+width:100%;
+height:5%;
+padding-left:2%;
+padding-right:2%;
+padding-top:1%;
+padding-bottom:1%;
+}
+    .daftarmenu{
+     margin-top: 0%;
+     margin-left: 5%;
+     margin-right: 5%;
+    border-radius: 7px 7px 7px 7px;
+        padding-bottom: 2%;
+}
+    .transbox {
+  background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        margin-bottom: 0px;
+}
+    .hero{
+    width: 100%;
+    height: 50%;
+    background-image:url(../public/images/heros/hero-image_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed; margin-bottom: 0%;
+}
+    alexalaikal{
+font-size:8px;
+text-align:center;
+color:#1890ff;
+font-weight:bold;
+}
+    .keranjang{
+    width:30px;
+    height: 20px;
+}
+    .date{
+    font-size: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.time{
+    font-size: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+    .wrapper {
+ display: grid;
+  grid-template-columns: 1fr;
+}
+    .tabel{
+     padding: 5px;
+    border-radius: 7px 0px 0px 7px;
+    height: 20%;
+}
+    .wrapper {
+ padding: 1px;
+ margin-left: 3%;
+ margin-right: 3%;
+    margin-top: 1%;
+    
+}
+    .box1{
+    background-color: #685454;
+     padding: 1px;
+    border-radius: 7px 7px 0px 0px;
+        margin-left: 3%;
+        font-size: 8px;
+        margin-right: 3%;
+}
+    .box2{
+     padding: 1px;
+    border-radius: 0px 0px 7px 7px;
+         margin-left: 3%;
+        margin-right: 3%;
+    background-color: #ffffff;
+        font-size: 8px;
+        
+}
+
+
+    h2{
+    font-size: 12px;
+    margin: 3%;
+}
+aa{
+     font-size: 10px;
+    margin: 3%;
+}
+    .card{
+   width: 90%;
+    margin-left: 5%;
+         margin-left: 5%;
+         margin-bottom: 5%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px rgba(204, 204, 204, 1);
+}
+    #hasil{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+
+}
+    .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0px solid;
+    height: 20%;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+    .tabel{
+     padding: 3px;
+    border-radius: 7px 0px 0px 7px;
+    height: 20%;
+}
+    table{
+    text-align: left;
+        font-size: 8px;
+        font-weight: bold;
+        width: 130%;
+}
+    .gambaran{
+    border-radius: 7px 0px 0px 7px;
+    height: 30%;
+}
+    .bawah{
+    width: 25%;
+    height: 100px;
+    margin-left: 50%;
+
+}
+    .footer2{
+    height: 5%;
+    background-color: #524233;
+    padding: 0.5%;
+        font-size: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+        position:relative;
+}
+       .tanda{
+    background-color: #5cb85c;
+    width: 96%;
+    height: 25px;
+    border-radius: 5px;
+    padding-top: 3.5%;
+    padding-bottom: 1%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+         margin-right: 2%;
+         margin-left: 2%;
+         margin-top: 1%;
+           margin-bottom: 0%;
+}   
+}
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #555555;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.5s;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 20px;
+    }
+    .nav-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .wayae{
+border-radius: 7px 7px 0px 0px;
+color: white;
+    font-weight: bold;
+font-size:12px;
+    text-align: center;
+background-color: #785E4D;
+width:100%;
+height:5%;
+padding:1.5%;
+}
+.wayae2{
+border-radius: 0px 0px 7px 7px;
+background-color: #ffffff;
+width:100%;
+height:5%;
+padding-left:2%;
+padding-right:2%;
+padding-top:0.5%;
+}
+    .daftarmenu{
+    border-radius: 7px 7px 7px 7px;
+}
+    .transbox {
+  background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+}
+    .hero{
+    width: 100%;
+    height: 50%;
+    background-image:url(../public/images/heros/hero-image_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+    alexalaikal{
+font-size:15px;
+text-align:center;
+color:#1890ff;
+font-weight:bold;
+
+}
+    .keranjang{
+    width:40px;
+    height: 30px;
+}
+    .date{
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.time{
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+    .wrapper {
+ display: grid;
+  grid-template-columns: 1fr;
+}
+    .tabel{
+     padding: 5px;
+    border-radius: 7px 0px 0px 7px;
+    height: 20%;
+}
+    .wrapper {
+ padding: 1px;
+ margin-left: 3%;
+ margin-right: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+    .box1{
+    background-color: #685454;
+     padding: 1px;
+    border-radius: 7px 7px 0px 0px;
+        margin-left: 3%;
+        margin-right: 3%;
+}
+    .box2{
+     padding: 1px;
+    border-radius: 0px 0px 7px 7px;
+         margin-left: 3%;
+        margin-right: 3%;
+    background-color: #ffffff;
+        
+}
+    .daftarmenu{
+    margin-top: 2%;
+     margin-left: 5%;
+     margin-right: 5%;
+    border-radius: 7px 7px 7px 7px;
+}
+
+    h2{
+    font-size: 20px;
+    margin: 3%;
+}
+aa{
+     font-size: 15px;
+    margin: 3%;
+}
+    .card{
+   width: 90%;
+    margin-left: 5%;
+         margin-left: 5%;
+         margin-bottom: 5%;
+    height: 98%;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px rgba(204, 204, 204, 1);
+}
+    #hasil{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+
+}
+    .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 0px solid;
+    height: 20%;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+    .tabel{
+     padding: 3px;
+    border-radius: 7px 0px 0px 7px;
+    height: 20%;
+}
+    table{
+    text-align: left;
+        font-size: 10px;
+        font-weight: bold;
+        width: 130%;
+}
+    .gambaran{
+    border-radius: 7px 0px 0px 7px;
+    height: 20%;
+}
+            .tanda{
+    background-color: #5cb85c;
+    width: 96%;
+    height: 25px;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+         margin-right: 2%;
+         margin-left: 2%;
+         margin-top: 1%;
+           margin-bottom: 0%;
+}   
+            .footer2{
+    height: 5%;
+    background-color: #524233;
+    padding: 0.5%;
+        font-size: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+        position:relative;
+}
+        
+}
+        .bintang {
+width: 100px;
+border: none;
+font-weight: bold;
+font-size: 12px;
+}
+.starImg {
+width: 100px;
+height: 21px;
+display: block;
+background: url(http://1.bp.blogspot.com/-Sp-iHFztZdc/UVD89O9oM1I/AAAAAAAAEU0/Xh-FBDaWyJY/s1600/star.png) 0 0 no-repeat;
+}
+        .star-50 {background-position: 0 0;}
