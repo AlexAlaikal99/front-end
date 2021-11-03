@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .g2{
+        Width:541px;
+        Height:413px;
+        margin-left: 200px;
+    }
+</style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>to do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+    <div class="navbar">
+    <h1>To Do List App</h1>
+    </div>
+    <div class="max">
+    <h4>Activity</h4>
+    <button onclick="kodejarwoTOGDIV()" id="myBtn"><i class="fas fa-plus"> </i> TAMBAH</button>
+    </div>
+    <div class="container">
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="header3">
+            <maximilian>Tambah List Item</maximilian>
+            <span class="close">&times;</span>
+          </div>
+            <div class="inputDiv">
+                <br>
+                <form name="fform">
+                <div class="alaikal">Nama List Item</div>
+                <div class="aurent"><input type="text" class="input" placeholder="Tambahkan nama list item"></div>
+                <div class="alaikal">Priority</div>
+                <div class="custom-select"> <select name="prioritas" size="1">
+                  <option value="hide">pilih prioritas</option>
+                  <option value="Very High"><i class="fas fa-circle"></i>Very High</option>
+                  <option value="High"><i class="fas fa-circle"></i>High</option>
+                  <option value="Medium"><i class="fas fa-circle"></i></i>Medium</option>
+                  <option value="Low"><i class="fas fa-circle"></i>Low</option>
+                  <option value="Very Low"><i class="fas fa-plus"></i>Very Low</option>
+                  </select>
+                </div>
+                <div class="header4"> <button class="add">SIMPAN</button></div>
+                </form>
+                </div>
+         </div>
+        </div>
+      
+      </div>
+     
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+          function kodejarwoTOGDIV() {
+          var kj = document.getElementById('kodejarwoTOGDIV');
+          if (kj.style.display === 'block') {    
+              kj.style.display = 'none';
+            } else {
+        kj.style.display = 'none';
+      }
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            kj.style.display = 'none';
+          }
+        }
+      
+    } 
+     
+    
+        
+        var x, i, j, l, ll, selElmnt, a, b, c;
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+          selElmnt = x[i].getElementsByTagName("select")[0];
+          ll = selElmnt.length;
+          a = document.createElement("DIV");
+          a.setAttribute("class", "select-selected");
+          a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+          x[i].appendChild(a);
+          b = document.createElement("DIV");
+          b.setAttribute("class", "select-items select-hide");
+          for (j = 1; j < ll; j++) {
+            c = document.createElement("DIV");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                var y, i, k, s, h, sl, yl;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                sl = s.length;
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < sl; i++) {
+                  if (s.options[i].innerHTML == this.innerHTML) {
+                    s.selectedIndex = i;
+                    h.innerHTML = this.innerHTML;
+                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                    yl = y.length;
+                    for (k = 0; k < yl; k++) {
+                      y[k].removeAttribute("class");
+                    }
+                    this.setAttribute("class", "same-as-selected");
+                    break;
+                  }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+          }
+          x[i].appendChild(b);
+          a.addEventListener("click", function(e) {
+              e.stopPropagation();
+              closeAllSelect(this);
+              this.nextSibling.classList.toggle("select-hide");
+              this.classList.toggle("select-arrow-active");
+            });
+        }
+        function closeAllSelect(elmnt) {
+          var x, y, i, xl, yl, arrNo = [];
+          x = document.getElementsByClassName("select-items");
+          y = document.getElementsByClassName("select-selected");
+          xl = x.length;
+          yl = y.length;
+          for (i = 0; i < yl; i++) {
+            if (elmnt == y[i]) {
+              arrNo.push(i)
+            } else {
+              y[i].classList.remove("select-arrow-active");
+            }
+          }
+          for (i = 0; i < xl; i++) {
+            if (arrNo.indexOf(i)) {
+              x[i].classList.add("select-hide");
+            }
+          }
+        }
+        document.addEventListener("click", closeAllSelect);
+        </script>
+    <script src='main.js'></script>
+</body>
+</html>

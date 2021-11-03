@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .g2{
+        Width:541px;
+        Height:413px;
+        margin-left: 200px;
+    }
+</style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>to do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style2.css'>
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+    <div class="navbar">
+     
+    <h1>To Do List App</h1>
+    </div>
+    <div class="max">
+      <a href="index.html"><img src="fi-rs-angle-double-left.svg" class="back"></a>
+    <h4 id="edit">New Activity</h4>
+    <button type="submit" id="edit-button"><img src="fi-rs-edit.svg" class="back"></button>
+    <button type="submit" id="end-editing"><img src="fi-rs-check.svg" class="back"></button>
+    <button onclick="kodejarwoTOGDIV()" id="myBtn"><i class="fas fa-plus"> </i> TAMBAH</button>
+    </div>
+    <div class="container">
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="header3">
+            <maximilian>Tambah List Item</maximilian>
+            <span class="close">&times;</span>
+          </div>
+            <div class="inputDiv">
+                <br>
+                <form name="fform">
+                <div class="alaikal">Nama List Item</div>
+                <div class="aurent"><input type="text" class="input" placeholder="Tambahkan nama list item"></div>
+                <div class="alaikal">Priority</div>
+                <div class="custom-select"> <select name="prioritas" size="1">
+                  <option value="hide">pilih prioritas</option>
+                  <option value="Very High"><i class="fas fa-circle"></i>Very High</option>
+                  <option value="High"><i class="fas fa-circle"></i>High</option>
+                  <option value="Medium"><i class="fas fa-circle"></i></i>Medium</option>
+                  <option value="Low"><i class="fas fa-circle"></i>Low</option>
+                  <option value="Very Low"><i class="fas fa-plus"></i>Very Low</option>
+                  </select>
+                </div>
+                <div class="header4"> <button class="add">SIMPAN</button></div>
+                </form>
+                </div>
+         </div>
+        </div>
+      
+      </div>
+     
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+          modal.style.display = "block";
+          function kodejarwoTOGDIV() {
+          var kj = document.getElementById('kodejarwoTOGDIV');
+          if (kj.style.display === 'block') {    
+              kj.style.display = 'none';
+            } else {
+        kj.style.display = 'none';
+      }
+        }
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            kj.style.display = 'none';
+          }
+        }
+      
+    } 
+        </script>
+    <script src='index.js'></script>
+</body>
+</html>

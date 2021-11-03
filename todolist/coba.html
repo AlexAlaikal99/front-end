@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Selectmenu - Custom Rendering</title>
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="main2.js"></script>
+</head>
+<body>
+<h1>Bahasa Pemograman</h1>
+
+<form id="form1" name="form1" onsubmit="return false">
+  <label for="select1">Pilih Bahasa: </label>
+  <select id="select1" name="select1">
+    <option value="html" data-class="avatar" data-style="background-image: url('445.png');">HTML</option>
+    <option value="css" data-class="avatar" data-style="background-image: url('446.png');">CSS</option>
+    <option value="js" data-class="avatar" data-style="background-image: url('447.png');">JS</option>
+  </select>
+  <input type="submit" value="tampil" onclick="tampil()">
+</form>
+
+<p id="container"></p>
+
+<div id="container2">
+  <p id="edit"><b> Click "Edit" button to edit content. </b></p>
+  <button type="submit" id="edit-button">Edit</button>
+  <button type="submit" id="end-editing">Done</button>
+</div>
+</body>
+</html>
